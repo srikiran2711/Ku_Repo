@@ -7,6 +7,18 @@
 	<artifactId>rest-server-app</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
+	 <profiles>
+<profile>
+<id>sonar</id>
+<properties>
+<!-- Optional URL to server. Default value is http://localhost:9000 -->
+<sonar.host.url>
+http://18.216.6.214:9000
+</sonar.host.url>
+</properties>
+</profile>
+</profiles>
+
 
 	<name>rest-server-app</name>
 	<description>REST project for Spring Boot</description>
